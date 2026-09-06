@@ -12,7 +12,7 @@ class VectoreDatabase:
         self.model = model
 
         # --------------------------------
-        # PINECONE API KEY
+        # GET PINECONE API KEY
         # --------------------------------
 
         api_key = os.getenv("PINECONE_API_KEY")
@@ -42,8 +42,12 @@ class VectoreDatabase:
 
         dimension = len(test_embedding)
 
+        print(
+            f"Embedding dimension: {dimension}"
+        )
+
         # --------------------------------
-        # CHECK INDEX
+        # CHECK PINECONE INDEX
         # --------------------------------
 
         existing_indexes = [
@@ -51,14 +55,22 @@ class VectoreDatabase:
             for index in self.pc.list_indexes()
         ]
 
+        print(
+            f"Existing Pinecone indexes: {existing_indexes}"
+        )
+
+        # --------------------------------
+        # CREATE INDEX IF NOT EXISTS
+        # --------------------------------
+
         if self.index_name not in existing_indexes:
 
             print(
-                f"Index '{self.index_name}' not found."
+                f"Index '{self.index_name}' does not exist."
             )
 
             print(
-                f"Creating index with dimension {dimension}..."
+                f"Creating Pinecone index with dimension {dimension}..."
             )
 
             self.pc.create_index(
@@ -71,10 +83,29 @@ class VectoreDatabase:
                 )
             )
 
-            # Wait until index is ready
-            while not self.pc.describe_index(
-                self.index_name
-            ).status["ready"]:
+            print(
+                "Pinecone index creation started."
+            )
+
+            # --------------------------------
+            # WAIT FOR INDEX
+            # --------------------------------
+
+            while True:
+
+                index_description = (
+                    self.pc.describe_index(
+                        self.index_name
+                    )
+                )
+
+                if index_description.status["ready"]:
+
+                    print(
+                        "Pinecone index is ready."
+                    )
+
+                    break
 
                 print(
                     "Waiting for Pinecone index..."
@@ -96,10 +127,14 @@ class VectoreDatabase:
             self.index_name
         )
 
+        print(
+            f"Connected to Pinecone index: {self.index_name}"
+        )
 
-    # --------------------------------
+
+    # ================================================
     # STORE VECTORS
-    # --------------------------------
+    # ================================================
 
     def build_index(self):
 
@@ -109,7 +144,9 @@ class VectoreDatabase:
             self.chunks
         ):
 
+            # --------------------------------
             # TEXT → VECTOR
+            # --------------------------------
 
             embedding = self.model.encode(
                 text
@@ -130,19 +167,23 @@ class VectoreDatabase:
             })
 
         # --------------------------------
-        # STORE IN PINECONE
+        # UPLOAD VECTORS TO PINECONE
         # --------------------------------
 
         response = self.index.upsert(
             vectors=vectors
         )
 
+        print(
+            f"Uploaded {len(vectors)} vectors to Pinecone."
+        )
+
         return response
 
 
-    # --------------------------------
+    # ================================================
     # SEARCH
-    # --------------------------------
+    # ================================================
 
     def Search(
         self,
@@ -150,7 +191,9 @@ class VectoreDatabase:
         k=2
     ):
 
+        # --------------------------------
         # QUESTION → VECTOR
+        # --------------------------------
 
         query_vector = self.model.encode(
             question
