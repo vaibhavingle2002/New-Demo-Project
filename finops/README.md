@@ -403,15 +403,30 @@ The project combines a **containerized RAG application on ECS Fargate** with an 
 
 ---
 
-## 👨‍💻 Author
-
-**Vaibhav Sudhakar Ingle**
+👨‍💻 Author
+Vaibhav Ingle
 
 AWS DevOps Engineer | Cloud & DevOps Enthusiast
 
-Skills demonstrated through this project:
+Skills Demonstrated
 
-`AWS` `Docker` `ECS` `Fargate` `ECR` `Lambda` `EventBridge` `Cost Explorer` `SES` `SNS` `CloudWatch` `IAM` `Secrets Manager` `FinOps` `Python` `RAG`
+AWS DevOps FinOps Python Boto3 Lambda Cost Explorer SNS SES EventBridge CloudWatch IAM
 
-```
-```
+🔗 Connect With Me
+
+GitHub:
+https://github.com/vaibhavingle2002
+
+LinkedIn:
+https://www.linkedin.com/in/vaibhav-ingle-82518a274/
+
+Email:
+devopsguyvaibhav888@gmail.com
+
+<div align="center">
+💰 AWS FinOps Automation
+Monitor • Analyze • Optimize • Automate
+
+Built by Vaibhav Ingle 🚀
+
+</div> ```
