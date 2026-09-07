@@ -402,31 +402,71 @@ Automated Email
 The project combines a **containerized RAG application on ECS Fargate** with an independent **AWS FinOps automation pipeline** for cloud cost monitoring and reporting.
 
 ---
-
-👨‍💻 Author
-Vaibhav Ingle
-
-AWS DevOps Engineer | Cloud & DevOps Enthusiast
-
-Skills Demonstrated
-
-AWS DevOps FinOps Python Boto3 Lambda Cost Explorer SNS SES EventBridge CloudWatch IAM
-
-🔗 Connect With Me
-
-GitHub:
-https://github.com/vaibhavingle2002
-
-LinkedIn:
-https://www.linkedin.com/in/vaibhav-ingle-82518a274/
-
-Email:
-devopsguyvaibhav888@gmail.com
+---
 
 <div align="center">
-💰 AWS FinOps Automation
-Monitor • Analyze • Optimize • Automate
 
-Built by Vaibhav Ingle 🚀
+# 👨‍💻 Author
 
-</div> ```
+<img src="https://img.shields.io/badge/Vaibhav%20Ingle-AWS%20DevOps%20Engineer-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+
+### 🚀 AWS DevOps Engineer | Cloud & DevOps Enthusiast | FinOps
+
+<br>
+
+<img src="https://img.shields.io/badge/AWS-Cloud%20%26%20DevOps-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/FinOps-Cost%20Optimization-00A67E?style=for-the-badge" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Python-Boto3-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS%20Lambda-Serverless-FF9900?style=for-the-badge&logo=awslambda&logoColor=white" />
+<img src="https://img.shields.io/badge/ECS-Fargate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+<img src="https://img.shields.io/badge/Terraform-Infrastructure%20as%20Code-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
+
+<br><br>
+
+## 🛠️ Skills Demonstrated
+
+`AWS` `Docker` `Kubernetes` `ECS` `Fargate` `ECR` `Lambda` `EventBridge`  
+`Cost Explorer` `SES` `SNS` `CloudWatch` `IAM` `Secrets Manager`  
+`Python` `Boto3` `FinOps` `RAG` `Cloud Automation` `Cost Optimization`
+
+<br>
+
+## 🔗 Connect With Me
+
+<a href="https://github.com/vaibhavingle2002">
+  <img src="https://img.shields.io/badge/GitHub-Vaibhav%20Ingle-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/vaibhav-ingle-82518a274/">
+  <img src="https://img.shields.io/badge/LinkedIn-Vaibhav%20Ingle-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="mailto:devopsguyvaibhav888@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<br><br>
+
+---
+
+### ☁️ AWS DevOps • 🚀 Automation • 💰 FinOps • 🐳 Containers • 📊 Cloud Monitoring
+
+### **Build → Deploy → Monitor → Optimize**
+
+<br>
+
+<img src="https://img.shields.io/badge/PROJECT-AWS%20FINOPS%20AUTOMATION-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
+
+<br><br>
+
+**Built with ❤️ by Vaibhav Ingle**
+
+⭐ If you found this project useful, consider giving it a star!
+
+</div>
+
