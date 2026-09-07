@@ -1,17 +1,45 @@
 ````markdown
-# 📊 AWS FinOps Automation
+# 💰 AWS FinOps Automation
 
-## Overview
+<p align="center">
 
-This project implements an automated **AWS FinOps cost monitoring and reporting system** for the RAG application deployed on **AWS ECS Fargate**.
+<img src="https://img.shields.io/badge/AWS-FinOps-orange?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Lambda-Serverless-FF9900?style=for-the-badge&logo=awslambda&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cost%20Explorer-AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/SNS-Notifications-EA4335?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/SES-Email%20Reports-527FFF?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/EventBridge-Automation-8C4FFF?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-Boto3-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/CloudWatch-Monitoring-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 
-The solution collects the latest available AWS cost data using **AWS Cost Explorer**, processes the data with **AWS Lambda**, generates a cost dashboard/report, and delivers the report through **Amazon SES**.
+</p>
 
-An **Amazon SNS** notification implementation was also developed as an alternative notification approach.
+# 📌 Project Overview
 
-A separate **Amazon Bedrock-based FinOps analysis** was also experimented with, but it was not used in the final production implementation because Bedrock model invocation was restricted in the AWS account.
+This project implements an automated **AWS FinOps monitoring and reporting system** using AWS Cost Explorer, Lambda, EventBridge, SNS, SES and CloudWatch.
+
+The system collects the latest available AWS cost data, analyzes service-wise spending, identifies high-cost services, generates basic optimization recommendations, and sends automated reports through email.
 
 ---
+
+# 🏗️ Architecture
+
+## 📢 SNS Flow
+
+```text
+EventBridge
+     ↓
+AWS Lambda
+     ↓
+AWS Cost Explorer
+     ↓
+Python / Boto3
+     ↓
+Cost Analysis
+     ↓
+Amazon SNS
+     ↓
+Email
 
 ## 🏗️ FinOps Architecture
 
