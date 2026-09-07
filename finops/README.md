@@ -39,7 +39,7 @@ Cost Analysis
 Amazon SNS
      ↓
 Email
-````markdown
+
 ## 🏗️ FinOps Architecture
 
 ```text
