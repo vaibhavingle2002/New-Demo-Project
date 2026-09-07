@@ -40,9 +40,8 @@ Amazon SNS
      ↓
 Email
 
-## 🏗️ FinOps Architecture
+🏗️ FinOps Architecture
 
-```text
                     ┌──────────────────────┐
                     │   Amazon EventBridge  │
                     │   Daily Schedule      │
@@ -73,9 +72,8 @@ Email
                                   │   Amazon SES     │
                                   │   Email Report   │
                                   └──────────────────┘
-````
 
----
+
 
 ## 🔄 How It Works
 
