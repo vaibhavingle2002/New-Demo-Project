@@ -1,4 +1,3 @@
-````markdown
 # 💰 AWS FinOps Automation
 
 <p align="center">
@@ -40,7 +39,7 @@ Cost Analysis
 Amazon SNS
      ↓
 Email
-
+````markdown
 ## 🏗️ FinOps Architecture
 
 ```text
