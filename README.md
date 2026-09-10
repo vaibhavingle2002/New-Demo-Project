@@ -59,6 +59,16 @@ The project combines **Cloud, DevOps, RAG, Serverless Automation, and FinOps** i
 
 ---
 
+# 🏗️ Complete Project Architecture
+
+<p align="center">
+  <img src="./docs/architecture.png" alt="Complete RAG Application Deployment on AWS ECS Fargate with Automated FinOps Governance" width="100%">
+</p>
+
+---
+
+---
+
 # 🏗️ Overall Architecture
 
 ```text
